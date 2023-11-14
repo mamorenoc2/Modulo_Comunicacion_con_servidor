@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Manuela",
+      "email": "mamnuela@gmail.com",
+      "date": "1990-01-01",
+      "gender": "Female"
+    },
+    {
+      "id": 2,
+      "name": "Julian",
+      "email": "julian@gmail.com",
+      "date": "1990-01-01",
+      "gender": "Male"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head>
+  <body>
+        <form action="">
+            <h2>Formulario de validación</h2>
+            <div class="form-group fullname">
+              <label for="fullname">Nombre completo</label>
+              <input type="text" id="fullname" placeholder="Ingresa tu nombre completo" autocomplete="off">
+            </div>
+            <div class="form-group email">
+              <label for="email">Correo electrónico</label>
+              <input type="text" id="email" placeholder="Ingresa tu correo electrónico" autocomplete="off">
+            </div>
+            <div class="form-group password">
+              <label for="password">Contraseña</label>
+              <input type="password" id="password" placeholder="Ingresa tu contraseña" autocomplete="off">
+              <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+            </div>
+            <div class="form-group date">
+              <label for="date">Fecha de Nacimiento</label>
+              <input type="date" id="date" placeholder="Ingresa tu fecha de nacimiento" autocomplete="off">
+            </div>
+            <div class="form-group gender">
+              <label for="gender">Género</label>
+              <select id="gender">
+                <option value="" selected disabled>Selecciona tu Género</option>
+                <option value="Male">Hombre</option>
+                <option value="Female">Mujer</option>
+                <option value="Other">Otro</option>
+              </select>
+            </div>
+            <div class="form-group submit-btn">
+              <input type="submit" value="Submit" class="style-submit-btn">
+            </div>
+          </form>
+
+        <div class="asyn-results">
+            <p class="men-async">Este mensaje se mostrará después de 5 segundos de forma asíncrona</p>
+            <table class="results-table-1" id="results-table-1">
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Date</th>
+                    <th>Gender</th>
+                </tr>
+            </table>
+            <table class="results-table" id="results-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date of Bird</th>
+                    <th>Gender</th>
+                </tr>
+            </table>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
